@@ -1,5 +1,19 @@
 # VEngine Roadmap
 
+## ✅ Milestone 1 — Engine Architecture
+
+- [x] Multi-target CMake project
+- [x] Engine library
+- [x] Sandbox application
+- [x] PUBLIC include directories
+- [x] Target linking
+
+## ⏳ Next
+
+- [ ] PRIVATE / PUBLIC / INTERFACE
+- [ ] Raylib integration
+- [ ] Dear ImGui integration
+
 ## Phase 1
 - Project setup
 - CMake
@@ -7,11 +21,11 @@
 - GitHub
 
 ## Phase 2
-- Raylib
-- Dear ImGui
+- Engine Architecture
 
 ## Phase 3
-- Engine Architecture
+- Raylib
+- Dear ImGui
 
 ## Phase 4
 - Math Library

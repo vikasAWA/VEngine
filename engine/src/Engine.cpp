@@ -1,10 +1,32 @@
 #include "Engine.h"
-#include <iostream>
+#include <raylib.h>
 
 namespace VEngine
 {
 	void Init()
 	{
-		std::cout << "Vengine Initialized\n";
+		InitWindow(800, 450, "VEngine");
+		SetTargetFPS(60);
 	} 
+
+	bool Running()
+	{
+		return !WindowShouldClose();
+	}
+
+	void BeginFrame()
+	{
+		BeginDrawing();
+		ClearBackground(RAYWHITE);
+	}
+
+	void EndFrame()
+	{
+		EndDrawing();
+	}
+
+	void Shutdown()
+	{
+		CloseWindow();
+	}
 } 

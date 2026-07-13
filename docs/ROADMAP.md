@@ -14,6 +14,7 @@ The goal is to understand engine architecture, modern C++, and graphics programm
 - [x] FetchContent
 - [x] Raylib integration
 - [x] Engine lifecycle
+- [x] Application framework
 
 ---
 
@@ -25,16 +26,18 @@ The goal is to understand engine architecture, modern C++, and graphics programm
 - GitHub
 - Modern CMake
 
-### Phase 2 — Engine Core 🚧
-- Application class
-- Engine loop
-- Event handling
-- Window management
+### Phase 2 — Engine Core ✅
+
+- [x] Application class
+- [x] Engine loop
+- [ ] Event handling
+- [ ] Window management
 
 ### Phase 3 — Graphics
-- Raylib integration
-- Dear ImGui integration
-- Rendering API
+
+- [x] Raylib integration
+- [ ] Renderer API
+- [ ] Dear ImGui integration
 
 ### Phase 4 — Math
 - Vector

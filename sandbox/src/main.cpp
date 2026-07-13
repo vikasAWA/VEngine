@@ -1,16 +1,8 @@
-#include "Engine.h"
+#include "Sandbox.h"
 
 int main()
 {
-	VEngine::Init();
-	while (VEngine::Running())
-	{
-		VEngine::BeginFrame();
-
-		// Game logic
-
-		VEngine::EndFrame();
-	}
-	VEngine::Shutdown();
+	Sandbox game;
+	game.Run();
 	return 0;
 }

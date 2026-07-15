@@ -2,8 +2,8 @@ add_library(VEngine)
 
 target_sources(VEngine 
 	PRIVATE 
-	"include/Application.h" 
-	"src/Application.cpp")
+	"src/Application.cpp" 
+	"src/Renderer.cpp" "src/Window.cpp")
 
 target_include_directories(VEngine PUBLIC include )
 

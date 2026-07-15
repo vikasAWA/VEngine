@@ -10,11 +10,5 @@ namespace VEngine
 	protected:
 		virtual void OnUpdate() {};
 
-	private:
-		void Init();
-		bool Running();
-		void BeginFrame();
-		void EndFrame();
-		void Shutdown();
 	};
 }

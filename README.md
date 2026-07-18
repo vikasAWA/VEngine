@@ -1,15 +1,15 @@
 # VEngine
 
-VEngine is a cross-platform game engine on top of Raylib to learn engine architecture.
+VEngine is a cross-platform game engine built on top of Raylib to learn engine architecture.
 
 ## Vision
 
-Build a modern modular game engine from first principles while learning engine architecture, modern C++, and graphics programming.
+Build a modern, modular game engine from first principles while learning engine architecture, modern C++, computer graphics, mathematics, and physics.
 
 ## Goals
 
 - Learn modern C++
-- Learn CMake 
+- Learn CMake
 - Build my own math library
 - Learn computer graphics
 - Build an editor with Dear ImGui
@@ -20,9 +20,9 @@ Build a modern modular game engine from first principles while learning engine a
 - [x] Initial project setup
 - [x] Engine architecture
 - [x] Raylib integration
+- [x] Renderer API
 - [ ] Dear ImGui integration
 - [ ] Math library
-- [ ] Renderer
 - [ ] Camera
 - [ ] Scene system
 - [ ] Physics
@@ -32,8 +32,8 @@ Build a modern modular game engine from first principles while learning engine a
 
 Current milestone:
 
-✅ Application framework
+✅ Renderer API
 
 Next milestone:
 
-🚧 Renderer abstraction
+🚧 Custom Math Library (Vector2)

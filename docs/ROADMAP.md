@@ -31,12 +31,12 @@ The goal is to understand engine architecture, modern C++, and graphics programm
 - [x] Application class
 - [x] Engine loop
 - [ ] Event handling
-- [ ] Window management
+- [x] Window management
 
-### Phase 3 — Graphics
+### Phase 3 — Graphics 🚧
 
 - [x] Raylib integration
-- [ ] Renderer API
+- [x] Renderer API
 - [ ] Dear ImGui integration
 
 ### Phase 4 — Math
@@ -44,18 +44,22 @@ The goal is to understand engine architecture, modern C++, and graphics programm
 - Matrix
 - Transform
 
-### Phase 5 — Renderer
-- Renderer abstraction
+### Phase 5 — ECS
+- Entity
+- Component
+- System
+
+### Phase 6 — Advanced Rendering
 - Texture
 - Shader
 - Mesh
 
-### Phase 6 — Camera
+### Phase 7 — Camera
 
-### Phase 7 — Scene System
+### Phase 8 — Scene System
 
-### Phase 8 — Editor
+### Phase 9 — Editor
 
-### Phase 9 — Physics
+### Phase 10 — Physics
 
-### Phase 10 — AI
+### Phase 11 — AI

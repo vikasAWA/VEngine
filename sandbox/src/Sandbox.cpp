@@ -1,44 +1,27 @@
 #include "Sandbox.h"
 #include "Renderer.h"
+#include "Vector2.h"
 
-#include <iostream>
 using namespace VEngine;
 
 void Sandbox::OnUpdate()
 {
-	Renderer::Clear(VEngine::Colors::Black);
-	VEngine::Renderer::DrawCircle(300, 223, 30, Colors::Red);
+	Vector2 start{ 100, 100 };
+	Vector2 v{ 5, 3 };
 
-    VEngine::Renderer::DrawCircle(
-        400,
-        225,
-        40,
-        Colors::Yellow
-    );
+	constexpr float PixelsPerUnit = 50.0f;
 
-    VEngine::Renderer::DrawLine(
-        100,
-        100,
-        500,
-        300,
-        Colors::Green
-    );
+	Vector2 end{ start + v * PixelsPerUnit };
 
-    VEngine::Renderer::DrawRectangle(
-        800,
-        500,
-        300,
-        200,
-        VEngine::Colors::Cyan
-    );
-
-    Renderer::DrawText(
-        "Hello, VEngine!",
-        700, 
-        400, 
-        100, 
-        Colors::Magenta
-    );
-
-
+	Renderer::DrawLine(
+		start,
+		end,
+		Colors::Red
+	);
+	
 }
+
+
+
+
+

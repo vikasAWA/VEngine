@@ -1,5 +1,6 @@
 #pragma once 
 #include "Color.h"
+#include "Vector2.h"
 
 namespace VEngine
 {
@@ -25,6 +26,12 @@ namespace VEngine
 			int startY, 
 			int endX, 
 			int endY, 
+			const Color& color
+		);
+
+		static void DrawLine(
+			const Vector2& start,
+			const Vector2& end,
 			const Color& color
 		);
 

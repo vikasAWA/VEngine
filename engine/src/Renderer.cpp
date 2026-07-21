@@ -56,7 +56,32 @@ namespace VEngine
 			startY,
 			endX,
 			endY,
-			{ color.r, color.g, color.b, color.a }
+			{ 
+				color.r, 
+				color.g, 
+				color.b, 
+				color.a 
+			}
+		);
+	}
+
+	void Renderer::DrawLine(
+		const Vector2& start,
+		const Vector2& end,
+		const Color& color
+	)
+	{
+		::DrawLine(
+			start.x,
+			start.y,
+			end.x,
+			end.y,
+			{
+				color.r,
+				color.g,
+				color.b,
+				color.a
+			}
 		);
 	}
 

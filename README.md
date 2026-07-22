@@ -97,7 +97,7 @@ VEngine/
 Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/VEngine.git
+git clone https://github.com/vikasAWA/VEngine.git
 cd VEngine
 ```
 

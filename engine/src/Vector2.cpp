@@ -1,4 +1,5 @@
 #include "Vector2.h"
+#include <cmath>
 
 namespace VEngine
 {
@@ -37,5 +38,19 @@ namespace VEngine
 			x / scalar,
 			y / scalar
 		);
+	}
+
+
+	float Vector2::Length() const {
+		return std::sqrt(x * x + y * y);
+	}
+
+	Vector2 Vector2::Normalized() const
+	{
+		float len = Length();
+		if (len == 0.0f)
+			return Vector2();
+
+		return *this / len;
 	}
 }

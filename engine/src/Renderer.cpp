@@ -3,13 +3,12 @@
 
 namespace VEngine
 {
-	// begin frame
 	void Renderer::BeginFrame()
 	{
 		BeginDrawing();	
 	}
 
-	// Rendering premitives
+	// premitives
 	void Renderer::Clear(const Color& color)
 	{
 		::Color raylibColor
@@ -24,16 +23,16 @@ namespace VEngine
 	}
 
 	void Renderer::DrawCircle(
-		int x, 
-		int y, 
+		float x, 
+		float y, 
 		float radius, 
 		const Color& color
 	)
 	{
 		::DrawCircle(
-			x, 
-			y, 
-			radius, 
+			static_cast<int>(x), 
+			static_cast<int>(y),
+			static_cast<int>(radius),
 			{
 				color.r, 
 				color.g, 
@@ -43,19 +42,33 @@ namespace VEngine
 		);
 	}
 
+	void Renderer::DrawCircle(
+		const Vector2& center,
+		float radius,
+		const Color& color
+	)
+	{
+		DrawCircle(
+			center.x,
+			center.y,
+			radius,
+			color
+		);
+	}
+
 	void Renderer::DrawLine(
-		int startX, 
-		int startY, 
-		int endX, 
-		int endY, 
+		float startX, 
+		float startY, 
+		float endX, 
+		float endY, 
 		const Color& color
 	)
 	{
 		::DrawLine(
-			startX,
-			startY,
-			endX,
-			endY,
+			static_cast<int>(startX),
+			static_cast<int>(startY),
+			static_cast<int>(endX),
+			static_cast<int>(endY),
 			{ 
 				color.r, 
 				color.g, 
@@ -71,11 +84,28 @@ namespace VEngine
 		const Color& color
 	)
 	{
-		::DrawLine(
+		DrawLine(
 			start.x,
 			start.y,
 			end.x,
 			end.y,
+			color
+		);
+	}
+
+	void Renderer::DrawRectangle(
+		float x,
+		float y,
+		float width,
+		float height,
+		const Color& color
+	)
+	{
+		::DrawRectangle(
+			static_cast<int>(x),
+			static_cast<int>(y),
+			static_cast<int>(width),
+			static_cast<int>(height),
 			{
 				color.r,
 				color.g,
@@ -86,18 +116,34 @@ namespace VEngine
 	}
 
 	void Renderer::DrawRectangle(
-		int x,
-		int y,
-		int width,
-		int height,
+		const Vector2& position,
+		float width,
+		float height,
 		const Color& color
 	)
 	{
-		::DrawRectangle(
-			x,
-			y,
+		DrawRectangle(
+			position.x,
+			position.y,
 			width,
 			height,
+			color
+		);
+	}
+
+	void Renderer::DrawText(
+		const char* text,
+		float x,
+		float y,
+		float fontSize,
+		const Color& color
+	)
+	{
+		::DrawText(
+			text,
+			static_cast<int>(x),
+			static_cast<int>(y),
+			static_cast<int>(fontSize),
 			{
 				color.r,
 				color.g,
@@ -109,27 +155,14 @@ namespace VEngine
 
 	void Renderer::DrawText(
 		const char* text,
-		int x,
-		int y,
-		int fontSize,
+		const Vector2& position,
+		float fontSize,
 		const Color& color
 	)
 	{
-		::DrawText(
-			text,
-			x,
-			y,
-			fontSize,
-			{
-				color.r,
-				color.g,
-				color.b,
-				color.a
-			}
-		);
+		DrawText(text, position.x, position.y, fontSize, color);
 	}
 
-	// this will end frame
 	void Renderer::EndFrame()
 	{
 		EndDrawing();

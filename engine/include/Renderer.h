@@ -12,20 +12,26 @@ namespace VEngine
 
 		// clear the frame
 		static void Clear(const Color& color);
-
+		
 		// rendering primitives
 		static void DrawCircle(
-			int x, 
-			int y, 
-			float radius, 
+			float x,
+			float y,
+			float radius,
+			const Color& color
+		);
+
+		static void DrawCircle(
+			const Vector2& center,
+			float radius,
 			const Color& color
 		);
 
 		static void DrawLine(
-			int startX, 
-			int startY, 
-			int endX, 
-			int endY, 
+			float startX, 
+			float startY,
+			float endX,
+			float endY,
 			const Color& color
 		);
 
@@ -36,18 +42,32 @@ namespace VEngine
 		);
 
 		static void DrawRectangle(
-			int x,
-			int y,
-			int width,
-			int height,
+			float x,
+			float y,
+			float width,
+			float height,
+			const Color& color
+		);
+
+		static void DrawRectangle(
+			const Vector2& position,
+			float width,
+			float height,
 			const Color& color
 		);
 
 		static void DrawText(
 			const char* text,
-			int x,
-			int y,
-			int fontSize,
+			float x,
+			float y,
+			float fontSize,
+			const Color& color
+		);
+
+		static void DrawText(
+			const char* text,
+			const Vector2& position,
+			float fontSize,
 			const Color& color
 		);
 		

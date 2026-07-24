@@ -1,29 +1,35 @@
 #include "Sandbox.h"
 #include "Renderer.h"
 #include "Vector2.h"
+#include "Input.h"
 
 using namespace VEngine;
 
 void Sandbox::OnUpdate()
 
 {
-	Vector2 start{ 100, 100 };
-	Vector2 v{ 6, 8 };
-	float PixelsPerUnit{ 50.f };
-
-	Vector2 end{ start + v * PixelsPerUnit };
-
-	Renderer::DrawLine(
-		start,
-		end,
-		Colors::Green
-	);
-
+	Renderer::Clear(Colors::SkyBlue);
+	static Vector2 pos{ 500,500 };
+	if (Input::IsKeyDown(Key::Right))
+	{
+		pos.x += 5;
+	}
+	if (Input::IsKeyDown(Key::Left))
+	{
+		pos.x -= 5;
+	}
+	if (Input::IsKeyDown(Key::Up))
+	{
+		pos.y -= 5;
+	}
+	if (Input::IsKeyDown(Key::Down))
+	{
+		pos.y += 5;
+	}
 	Renderer::DrawCircle(
-		end.x,
-		end.y,
-		5,
-		Colors::Red
+		pos,
+		40,
+		Colors::Yellow
 	);
 }
 

@@ -6,7 +6,7 @@ target_sources(VEngine
 	"src/Renderer.cpp" 
 	"src/Window.cpp" 
 	"include/Color.h" 
-	"src/Vector2.cpp")
+	"src/Vector2.cpp" "include/Input.h" "include/Key.h" "src/Input.cpp")
 
 target_include_directories(VEngine PUBLIC include )
 

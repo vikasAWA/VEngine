@@ -6,7 +6,7 @@ namespace VEngine
 	
 	void Window::Create()
 	{
-		InitWindow(1600, 900, "VEngine");
+		InitWindow(1900, 1200, "VEngine");
 	}
 	bool Window::Running()
 	{

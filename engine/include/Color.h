@@ -23,5 +23,6 @@ namespace VEngine
 		inline constexpr Color Gray{ 128,128,128,255 };
 		inline constexpr Color Cyan{ 0, 255, 255, 255 };
 		inline constexpr Color Magenta{ 255, 0, 255, 255 };
+		inline constexpr Color DarkGray{ 169, 169, 169, 255 };
 	}
 }

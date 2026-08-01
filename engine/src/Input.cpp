@@ -14,6 +14,10 @@ namespace
 		case VEngine::Key::Space:  return KEY_SPACE;
 		case VEngine::Key::Enter:  return KEY_ENTER;
 		case VEngine::Key::Escape: return KEY_ESCAPE;
+		case VEngine::Key::W: return KEY_W;
+		case VEngine::Key::A: return KEY_A;
+		case VEngine::Key::S: return KEY_S;
+		case VEngine::Key::D: return KEY_D;
 		}
 
 		return KEY_NULL;

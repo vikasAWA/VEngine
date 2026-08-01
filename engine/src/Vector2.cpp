@@ -58,4 +58,9 @@ namespace VEngine
 	{
 		return Vector2(-y, x);
 	}
+
+	float Vector2::Dot(const Vector2& other) const
+	{
+		return x * other.x + y * other.y;
+	}
 }

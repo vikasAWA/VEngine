@@ -19,5 +19,6 @@ namespace VEngine
 		float Length() const;
 		Vector2 Normalized() const;
 		Vector2 Perpendicular() const;
+		float Dot(const Vector2& other) const;
 	};
 }

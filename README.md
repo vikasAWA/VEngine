@@ -19,7 +19,7 @@ Rather than replacing Raylib, VEngine uses it as a rendering backend while imple
 - Learn Modern C++
 - Learn CMake
 - Design a clean engine architecture
-- Build my own mathematics library
+- Build a mathematics library and interactive visualizations to understand the underlying concepts.
 - Learn computer graphics
 - Learn game physics
 - Build an editor using Dear ImGui
@@ -47,6 +47,28 @@ Rather than replacing Raylib, VEngine uses it as a rendering backend while imple
   - Line
   - Rectangle
   - Text
+
+---
+
+### Mathematics
+
+- ✅ Custom `Vector2` class
+- ✅ Vector arithmetic
+  - Addition
+  - Subtraction
+  - Scalar multiplication
+- ✅ Magnitude
+- ✅ Normalization
+- ✅ Dot Product
+- ✅ Interactive math visualizations
+
+---
+
+## Screenshots
+
+### Dot Product Explorer
+
+![Dot Product Explorer](docs/images/dot-product-explorer.png)
 
 ---
 

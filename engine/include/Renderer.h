@@ -1,6 +1,7 @@
 #pragma once 
 #include "Color.h"
 #include "Vector2.h"
+#include <string>
 
 namespace VEngine
 {
@@ -57,7 +58,7 @@ namespace VEngine
 		);
 
 		static void DrawText(
-			const char* text,
+			const std::string text,
 			float x,
 			float y,
 			float fontSize,
@@ -65,9 +66,15 @@ namespace VEngine
 		);
 
 		static void DrawText(
-			const char* text,
+			const std::string text,
 			const Vector2& position,
 			float fontSize,
+			const Color& color
+		);
+
+		static void DrawAxes(
+			const Vector2& start,
+			const Vector2& end,
 			const Color& color
 		);
 		

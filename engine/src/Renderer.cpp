@@ -132,7 +132,7 @@ namespace VEngine
 	}
 
 	void Renderer::DrawText(
-		const char* text,
+		const std::string text,
 		float x,
 		float y,
 		float fontSize,
@@ -140,7 +140,7 @@ namespace VEngine
 	)
 	{
 		::DrawText(
-			text,
+			text.c_str(),
 			static_cast<int>(x),
 			static_cast<int>(y),
 			static_cast<int>(fontSize),
@@ -154,13 +154,23 @@ namespace VEngine
 	}
 
 	void Renderer::DrawText(
-		const char* text,
+		const std::string text,
 		const Vector2& position,
 		float fontSize,
 		const Color& color
 	)
 	{
 		DrawText(text, position.x, position.y, fontSize, color);
+	}
+
+	// Axes
+	void Renderer::DrawAxes(
+		const Vector2& start,
+		const Vector2& end,
+		const Color& color
+	)
+	{
+		DrawLine(start, end, color);
 	}
 
 	void Renderer::EndFrame()

@@ -39,10 +39,32 @@ The goal is to understand engine architecture, modern C++, and graphics programm
 - [x] Renderer API
 - [ ] Dear ImGui integration
 
-### Phase 4 — Math
-- Vector
-- Matrix
-- Transform
+## Phase 4 — Mathematics 🚧
+
+### Vector2
+
+- [x] Addition
+- [x] Subtraction
+- [x] Scalar multiplication
+- [x] Magnitude
+- [x] Normalization
+- [x] Dot Product
+- [ ] Projection
+- [ ] Reflection
+- [ ] Lerp
+
+### Matrix
+
+- [ ] Matrix2
+- [ ] Matrix3
+- [ ] Matrix4
+
+### Transform
+
+- [ ] Translation
+- [ ] Rotation
+- [ ] Scale
+
 
 ### Phase 5 — ECS
 - Entity

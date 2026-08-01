@@ -10,6 +10,10 @@ namespace VEngine
         Down,
         Space,
         Enter,
-        Escape
+        Escape,
+        W,
+        A,
+        S,
+        D
 	};
 }

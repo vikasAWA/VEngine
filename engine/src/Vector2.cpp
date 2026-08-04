@@ -16,6 +16,7 @@ namespace VEngine
 		);
 	}
 
+
 	Vector2 Vector2::operator-(const Vector2& other) const
 	{
 		return Vector2(
@@ -40,7 +41,34 @@ namespace VEngine
 		);
 	}
 
+	Vector2& Vector2::operator+=(const Vector2& other)
+	{
+		x += other.x;
+		y += other.y;
+		return *this;
+	}
 
+	Vector2& Vector2::operator-=(const Vector2& other)
+	{
+		x -= other.x;
+		y -= other.y;
+		return *this;
+	}
+
+	Vector2& Vector2::operator*=(float scalor)
+	{
+		x *= scalor;
+		y += scalor;
+		return *this;
+	}
+
+	Vector2& Vector2::operator/=(float scalor)
+	{
+		x /= scalor;
+		y /= scalor;
+		return *this;
+	}
+	
 	float Vector2::Length() const {
 		return std::sqrt(x * x + y * y);
 	}

@@ -15,6 +15,10 @@ namespace VEngine
 		Vector2 operator-(const Vector2& other) const;
 		Vector2 operator*(float scalar) const;
 		Vector2 operator/(float scalar) const;
+		Vector2& operator+=(const Vector2& other);
+		Vector2& operator-=(const Vector2& other);
+		Vector2& operator*=(float scalor);
+		Vector2& operator/=(float scalor);
 
 		float Length() const;
 		Vector2 Normalized() const;

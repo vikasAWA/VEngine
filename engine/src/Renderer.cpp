@@ -3,6 +3,18 @@
 
 namespace VEngine
 {
+	namespace {
+		::Color ToRaylibColor(const Color& color)
+		{
+			return {
+				color.r,
+				color.g,
+				color.b,
+				color.a
+			};
+		}
+	}
+
 	void Renderer::BeginFrame()
 	{
 		BeginDrawing();	
@@ -11,15 +23,7 @@ namespace VEngine
 	// premitives
 	void Renderer::Clear(const Color& color)
 	{
-		::Color raylibColor
-		{
-			color.r, 
-			color.g, 
-			color.b, 
-			color.a
-		};
-		::ClearBackground(raylibColor);
-
+		::ClearBackground(ToRaylibColor(color));
 	}
 
 	void Renderer::DrawCircle(
@@ -33,12 +37,7 @@ namespace VEngine
 			static_cast<int>(x), 
 			static_cast<int>(y),
 			static_cast<int>(radius),
-			{
-				color.r, 
-				color.g, 
-				color.b, 
-				color.a
-			}
+			ToRaylibColor(color)
 		);
 	}
 
@@ -69,12 +68,7 @@ namespace VEngine
 			static_cast<int>(startY),
 			static_cast<int>(endX),
 			static_cast<int>(endY),
-			{ 
-				color.r, 
-				color.g, 
-				color.b, 
-				color.a 
-			}
+			ToRaylibColor(color)
 		);
 	}
 
@@ -106,12 +100,7 @@ namespace VEngine
 			static_cast<int>(y),
 			static_cast<int>(width),
 			static_cast<int>(height),
-			{
-				color.r,
-				color.g,
-				color.b,
-				color.a
-			}
+			ToRaylibColor(color)
 		);
 	}
 
@@ -144,12 +133,7 @@ namespace VEngine
 			static_cast<int>(x),
 			static_cast<int>(y),
 			static_cast<int>(fontSize),
-			{
-				color.r,
-				color.g,
-				color.b,
-				color.a
-			}
+			ToRaylibColor(color)
 		);
 	}
 

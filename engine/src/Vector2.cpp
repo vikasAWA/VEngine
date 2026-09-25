@@ -16,7 +16,6 @@ namespace VEngine
 		);
 	}
 
-
 	Vector2 Vector2::operator-(const Vector2& other) const
 	{
 		return Vector2(
@@ -87,7 +86,7 @@ namespace VEngine
 		return Vector2(-y, x);
 	}
 
-	float Vector2::Dot(const Vector2& other) const
+	float Vector2::Dot(const Vector2& other) const // raw dot A.Normalized()
 	{
 		return x * other.x + y * other.y;
 	}

@@ -58,7 +58,7 @@ namespace VEngine
 		);
 
 		static void DrawText(
-			const std::string text,
+			const std::string& text,
 			float x,
 			float y,
 			float fontSize,
@@ -66,7 +66,7 @@ namespace VEngine
 		);
 
 		static void DrawText(
-			const std::string text,
+			const std::string& text,
 			const Vector2& position,
 			float fontSize,
 			const Color& color
